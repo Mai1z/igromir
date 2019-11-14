@@ -1,0 +1,41 @@
+// ========== All Categories ==========
+
+.all-cat {
+  margin-bottom: 48px;
+    h1 {
+      font-size: 30px;
+    } 
+}
+
+.all-cat__inner {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 192px);
+  grid-gap: 24px 30px;
+}
+
+.all-cat-inner__item {
+  border-radius: 5px;
+  border: 1px solid #D2D2D2;
+  padding-top: 25px;
+  text-align: center;
+  transition: 0.2s linear;
+  cursor: pointer;
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    a {
+      font-size: 14px;
+    }
+}
+
+.all-cat-inner__item:hover {
+  border: 1px solid $main-bgcolor;
+  box-shadow: 0px 0px 4px rgba(77, 188, 8, 0.5);
+}
+
+.all-cat-inner__item:hover a {
+  color: $main-bgcolor;
+}

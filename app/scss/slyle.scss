@@ -36,6 +36,11 @@ a {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-family: $main-font;
+	transition: 0.2s linear;
+}
+
+a:hover {
+	color: $main-bgcolor;
 }
 
 body {
@@ -74,3 +79,5 @@ button:hover {
 @import 'header';
 @import 'cat-line';
 @import 'main-slider';
+@import 'all-cat';
+@import 'middle-slider';
