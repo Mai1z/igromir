@@ -4,17 +4,99 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Игромир</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/slyle.css">
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-	<header>
+
+	<!---------- Header ------------>
+
+	<header class="header">
 		<div class="container">
-			<img src="img/logo.svg" alt="logo">
+			<div class="header__inner">
+					<img src="img/header/logo.svg" alt="logo">
+					<ul class="header-inner__list">
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Оплата и доставка</a></li>
+						<li><a href="#">Оптовикам</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>	
+					<h1>+7 (3412) 57 56 25 </h1>
+					<button class="header-inner__btn">
+						<object data="img/header/burger.svg" type="image/svg+xml"></object>
+						<a href="#">Каталог товаров</a>
+					</button>
+					<article class="header-inner__search">
+						<div class="header-inner-search__input">
+							<object data="img/header/search.svg" type="image/svg+xml"></object>
+							Поиск
+						</div>
+						<div class="header-inner-search__menu">
+							<select name="list" id="header-list">
+								<option value="1">Все разделы</option>
+								<option value="1">Раздел</option>
+								<option value="1">Раздел</option>
+								<option value="1">Раздел</option>
+							</select>
+						</div>	
+					</article>
+					<article class="header-inner__icons">
+						<div class="header-inner-icons__item">
+							<object data="img/header/log-in.svg" type="image/svg+xml"></object>
+						</div>
+						<div class="header-inner-icons__item">
+							<object data="img/header/heart.svg" type="image/svg+xml"></object>
+						</div>
+						<div class="header-inner-icons__item">
+							<object data="img/header/shop.svg" type="image/svg+xml"></object>
+						</div>
+						<p>9 999 999 руб.</p>		
+					</article>	
+			</div>
+			
 			
 		</div>
-		
 	</header>
+
+	<!------ Category Line  ----->
+
+	<section class="cat-line">
+		<div class="container">
+			<div class="cat-line__inner">	
+				<article class="cat-line__item">
+					<div class="cat-line-item__logo"></div>
+					<a>Игрушки для мальчиков</a>
+				</article>
+				<article class="cat-line__item">
+					<div class="cat-line-item__logo"></div>
+					<a>Игрушки для девочек</a>
+				</article>
+				<article class="cat-line__item">
+					<div class="cat-line-item__logo"></div>
+					<a>Игрушки для малышей</a>
+				</article>
+				<article class="cat-line__item">
+					<div class="cat-line-item__logo"></div>
+					<a>Игрушки из дерева</a>
+				</article>
+				<article class="cat-line__item">
+					<div class="cat-line-item__logo"></div>
+					<a>Куклы и пупсы</a>
+				</article>
+				<a class="cat-line-inner__more"	 href="#">Ещё</a>		
+			</div>
+		</div>
+	</section>
+
+	<section class="main-slider">
+		<div class="container">
+			<div class="main-slider__inner">
+				<img src="img/slider/slider.png" alt="slider">
+			</div>
+		</div>
+	</section>
+
 
 
 
