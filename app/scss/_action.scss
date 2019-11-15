@@ -1,0 +1,60 @@
+
+//  ============ Акции ===========
+
+.action__inner {
+  margin-bottom: 50px;
+    h1 {
+      font-size: 30px;
+      margin-bottom: 50px;
+      line-height: 34px;
+    }
+}
+
+.action-inner__items {
+  display: flex;
+}
+
+.action-inner__item {
+  width: 370px;
+  height: 167px;
+  border-radius: 5px;
+  border: 1px solid $border-color;
+  margin-right: 30px;
+  display: flex;
+    h2 {
+      font-size: 50px;
+      color: $second-font-color;
+      margin: 40px 45px 0 30px;
+    }
+    p {
+      font-size: 16px;
+      margin: 25px 10px 0 0;
+    }
+}
+
+.action-inner-item__img {
+  position: relative;
+  padding: 1px;
+  
+    img {
+      margin-right: 30px;
+      width: 164px;
+      height: 164px;
+    } 
+}
+
+.action-inner-item__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: $second-font-color;
+  background-color: $second-bgcolor;
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}

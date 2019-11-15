@@ -1,0 +1,37 @@
+
+//  ============ Популярные брэнды ===========
+
+.popular-brands__inner {
+  margin-bottom: 55px;
+    h1 {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+    button {
+      color: $second-font-color;
+      font-size: 16px;
+      padding: 10px 34px;
+    }
+}
+
+.popular-brands-inner__items {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 72px 72px;
+  grid-gap: 25px 30px;
+}
+
+.popular-brands-inner__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+}
+
+.popular-brands-inner__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  width: 100%;
+}
