@@ -49,12 +49,18 @@ body {
 	color: $main-font-color;
 	font-size: 12px;
 	font-weight: 500;
+	margin: 0;
 }
 
 header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 10px;
+}
+
+footer {
+	background-color: $elem-bgcolor;
 }
 
 button {
@@ -91,3 +97,5 @@ button:hover {
 @import 'action';
 @import 'popular-brands';
 @import 'seo';
+@import 'subscribe';
+@import 'footer';

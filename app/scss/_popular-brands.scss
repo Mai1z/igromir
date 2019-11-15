@@ -27,6 +27,10 @@
   align-items: center;
   border: 1px solid $border-color;
   border-radius: 5px;
+    img {
+      width: auto;
+      height: auto;
+    }
 }
 
 .popular-brands-inner__btn {

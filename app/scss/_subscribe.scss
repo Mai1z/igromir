@@ -1,0 +1,43 @@
+
+//  ============ Подписка ===========
+
+.subscribe {
+  background-color: $border-color;
+}
+
+.subscribe__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 80px;
+}
+
+.subscribe-inner__text {
+  width: 270px;
+    h2 {
+      font-size: 26px;
+    }
+}
+
+.subscribe-inner__input {
+  display: flex;
+  width: 100%;
+  max-width: 570px;
+  border-radius: 5px;
+  height: 48px;
+    input {
+      height: auto;
+      border: none;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      width: 100%;
+    }
+    button {
+      color: $second-font-color;
+      padding: 14px 25px;
+      font-size: 16px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+}
+

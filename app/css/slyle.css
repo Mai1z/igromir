@@ -40,12 +40,18 @@ body {
   color: #000000;
   font-size: 12px;
   font-weight: 500;
+  margin: 0;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #EBFFDE;
 }
 
 button {
@@ -489,6 +495,11 @@ button:hover {
   border-radius: 5px;
 }
 
+.popular-brands-inner__item img {
+  width: auto;
+  height: auto;
+}
+
 .popular-brands-inner__btn {
   display: flex;
   justify-content: center;
@@ -508,4 +519,101 @@ button:hover {
 .seo__inner p {
   font-size: 12px;
   line-height: 18px;
+}
+
+.subscribe {
+  background-color: #D2D2D2;
+}
+
+.subscribe__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 80px;
+}
+
+.subscribe-inner__text {
+  width: 270px;
+}
+
+.subscribe-inner__text h2 {
+  font-size: 26px;
+}
+
+.subscribe-inner__input {
+  display: flex;
+  width: 100%;
+  max-width: 570px;
+  border-radius: 5px;
+  height: 48px;
+}
+
+.subscribe-inner__input input {
+  height: auto;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 100%;
+}
+
+.subscribe-inner__input button {
+  color: #ffffff;
+  padding: 14px 25px;
+  font-size: 16px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.footer__inner {
+  display: flex;
+  padding: 24px 0 48px 0;
+}
+
+.footer-inner__contacts {
+  width: 100%;
+  max-width: 500px;
+}
+
+.footer-inner__contacts img {
+  margin-bottom: 24px;
+}
+
+.footer-inner__contacts h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.footer-inner__contacts h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer-inner__contacts p {
+  font-size: 12px;
+}
+
+.footer-inner-contacts__social {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.footer-inner-contacts__social object {
+  margin-right: 22px;
+}
+
+.footer-inner__links {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-inner__links a {
+  text-transform: none;
+  margin-bottom: 18px;
+}
+
+.footer-inner__links h2 {
+  font-size: 16px;
+  margin-bottom: 25px;
 }
