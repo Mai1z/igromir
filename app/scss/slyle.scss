@@ -56,7 +56,8 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 10px;
+	
+	margin-bottom: 22px;
 }
 
 footer {
@@ -86,6 +87,10 @@ button:hover {
 
 .orange {
 	background-color: $second-bgcolor;
+}
+
+.green {
+  background-color: $main-bgcolor;
 }
 
 @import 'header';

@@ -40,3 +40,9 @@
   color: $main-bgcolor;
   text-decoration: underline;
 }
+
+@media (max-width: 1020px) {
+  .cat-line {
+    display: none;
+  }
+}

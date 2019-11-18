@@ -39,3 +39,43 @@
 .all-cat-inner__item:hover a {
   color: $main-bgcolor;
 }
+
+@media (max-width: 1020px) {
+  .all-cat__inner {
+    padding: 0 18px;
+  }
+  .all-cat {
+    margin-bottom: 48px;
+      h1 {
+        font-size: 20px;
+        padding: 0 18px;
+      } 
+  }
+  .all-cat__inner {
+    margin-top: 24px;
+    display: grid;
+  }
+}
+
+@media (max-width: 760px) {
+  .all-cat {
+    margin-bottom: 25px;
+  }
+  .all-cat__inner {
+    margin-top: 24px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 192px;
+    overflow: hidden;
+    grid-template-columns: repeat(4, 210px);
+    grid-template-rows: 145px;
+    grid-gap: 10px 15px;
+  }
+
+  .all-cat-inner__item {
+    padding-top: 18px;
+      a {
+        font-size: 12px;
+      }
+  }
+}
