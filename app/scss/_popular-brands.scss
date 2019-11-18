@@ -16,7 +16,7 @@
 
 .popular-brands-inner__items {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   grid-template-rows: 72px 72px;
   grid-gap: 25px 30px;
 }
@@ -27,9 +27,10 @@
   align-items: center;
   border: 1px solid $border-color;
   border-radius: 5px;
+  padding: 5px 0;
     img {
-      width: auto;
-      height: auto;
+      max-width: 110px;
+      max-height: 60px;
     }
 }
 
@@ -48,5 +49,24 @@
         font-size: 20px;
         margin-bottom: 25px;
       }
+  }
+}
+
+@media (max-width: 760px) {
+  .popular-brands-inner__items {
+    display: grid;
+    grid-gap: 15px 15px;
+  }
+  .popular-brands-inner__btn {
+    margin-top: 27px;
+  }
+  .popular-brands__inner {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 592px) {
+  .popular-brands-inner__items {
+    grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
   }
 }

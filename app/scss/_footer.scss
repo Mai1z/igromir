@@ -51,3 +51,33 @@
 .footer-inner-links__more {
   text-decoration: underline;
 }
+
+@media (max-width: 760px) {
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-inner__contacts {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+      img {
+        display: none;
+      }
+  }
+  .footer-inner__links {
+    width: auto;
+    text-align: center;
+    margin-top: 25px;
+      a {
+        display: none;
+      }
+      h2 {
+        margin-bottom: 0;
+      }
+  }
+}
+
