@@ -6,6 +6,7 @@
 	<title>Игромир</title>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/slyle.css">
 </head>
 <body>
@@ -23,7 +24,7 @@
 						<li><a href="#">Акции</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>	
-					<h1>+7 (3412) 57 56 25 </h1>
+					<h2>+7 (3412) 57 56 25 </h2>
 					<button class="header-inner__btn">
 						<object data="img/header/burger.svg" type="image/svg+xml"></object>
 						<a href="#">Каталог товаров</a>
@@ -60,7 +61,44 @@
 				<div class="header-inner-mobile__burg"></div>
 				<img src="img/header/logo-mobile.png" alt="img">
 				<object data="img/header/search-mobile.svg" type="image/svg+xml"></object>
-			</div>  
+			</div>
+			
+			<div class="header-mobmenu">
+				<div class="header-wrapper">
+
+					<div class="header-wrapper__inner show">
+						<div class="header-wrapper__logo">
+							<img src="img/header/logo-mobile.png" alt="img">
+							<div class="header-wrapper__btn closewrap"></div>
+						</div>	
+						<div class="header-wrapper__items">
+							<button class="catalog__btn">Каталог товаров</button>
+							<a href="#">О компании</a>
+							<a href="#">Оплата и доставка</a>
+							<a href="#">Оптовикам</a>
+							<a href="#">Акции</a>
+							<a href="#">Контакты</a>
+						</div>
+					</div>
+
+					<div class="header-wrapper__catalog">
+						<div class="header-wrapper__back catalog__btn">
+							<div class="header-wrapper-back__arrow"></div>
+							<h5>Каталог товаров</h5>
+						</div>	
+							<div class="header-wrapper__items">
+							<a href="#">Наш Китай</a>
+							<a href="#">Полесье</a>
+							<a href="#">Сакс</a>
+							<a href="#">Аспект</a>
+							<a href="#">Нордпласт</a>
+						</div>
+					</div>
+
+					<h2>+7 (3412) 57 56 25 </h2>
+
+				</div>
+			</div>	
 			
 		</div>
 	</header>
@@ -225,6 +263,10 @@
 							<p>Глазки-мини Мишка Косолапый без шляпы</p>
 							<h3>9 999 200 руб.</h3>
 						</div>
+						<svg class="popular-toys__like" width="34" height="34">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/popular-toys/like.svg#like">
+						</svg>
+
 					</div>
 					<div class="popular-toys-inner-slider__item">
 						<img src="img/popular-toys/red-car.png" alt="img">
@@ -375,7 +417,7 @@
 				</div>
 
 				<div class="footer-inner__links">
-					<h2>Интернет магазин</h2>
+					<h2 class="footer-links__btn">Интернет магазин</h2>
 					<a href="#">Игрушки из дерева</a>
 					<a href="#">Куклы и пупсы</a>
 					<a href="#">Игрушки на батарейках</a>
@@ -386,7 +428,7 @@
 				</div>
 
 				<div class="footer-inner__links">
-					<h2>О компании</h2>
+					<h2 class="footer-links__btn">О компании</h2>
 					<a href="#">О компании</a>
 					<a href="#">Личный кабинет</a>
 					<a href="#">Контакты</a>

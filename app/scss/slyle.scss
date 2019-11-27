@@ -24,6 +24,10 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: $main-font;
 }
 
+h1 {
+	font-size: 30px;
+}
+
 p {
 	padding: 0;
 	margin: 0;
@@ -50,6 +54,13 @@ body {
 	font-size: 12px;
 	font-weight: 500;
 	margin: 0;
+	-webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: rgba(0,0,0,0); 
+  -webkit-tap-highlight-color: transparent;
+}
+
+.fixed {
+	overflow: hidden;
 }
 
 header {
@@ -72,11 +83,17 @@ button {
 	align-items: center;
 	transition: 0.2s linear;
 	cursor: pointer;
+	outline: none;
 }
 
 button:hover {
 	background-color: $second-bgcolor;
 }
+
+.slick-arrow.slick-hidden {
+	display: block;
+}
+
 
 .container {
 	max-width: 1190px;

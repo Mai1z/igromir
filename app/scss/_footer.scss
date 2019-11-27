@@ -45,7 +45,21 @@
     h2 {
       font-size: 16px;
       margin-bottom: 25px;
+      position: relative;
+        &:after {
+          content: '\e901';
+          font-family: 'icomoon';
+          position: absolute;
+          right: -25px;
+          top: 2px;
+          transform: rotate(90deg);
+          color: $main-bgcolor;
+        }
     }
+}
+
+.footer-inner__links .show {
+
 }
 
 .footer-inner-links__more {
@@ -72,12 +86,14 @@
     width: auto;
     text-align: center;
     margin-top: 25px;
-      a {
-        display: none;
-      }
-      h2 {
-        margin-bottom: 0;
-      }
+    max-height: 20px;
+    overflow: hidden;
+      // a {
+      //   display: none;
+      // }
+      // h2 {
+      //   margin-bottom: 0;
+      // }
   }
 }
 
