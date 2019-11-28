@@ -1,0 +1,15 @@
+
+//  ============ Category===========
+
+.category {
+  h1 {
+    margin-bottom: 40px;
+  }
+}
+
+.category__inner {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  grid-column-gap: 30px;
+  grid-template-rows: auto;
+}

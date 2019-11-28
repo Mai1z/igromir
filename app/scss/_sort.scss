@@ -1,0 +1,51 @@
+
+//  ========= Сортировка ========
+
+.sort {
+  padding: 7px 11px 7px 18px;
+  background-color: $elem-bgcolor;
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+  border-radius: 5px;
+    h3 {
+      margin-right: 19px;
+    }
+    a {
+      text-transform: none;
+      font-size: 14px;
+      margin-right: 43px;
+    }
+    select {
+      margin-left: auto;
+      border: 1px solid #D2D2D2;
+      border-radius: 5px;
+      padding: 4px 6px 4px 16px;
+    }
+}
+
+.sort .up {
+  position: relative;
+  &:after {
+    content: '\e901';
+    font-family: 'icomoon';
+    font-size: 12px;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -17px;
+    top: 3px;
+  }
+}
+
+.sort .down {
+  position: relative;
+  &:after {
+    content: '\e901';
+    font-family: 'icomoon';
+    font-size: 12px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: -17px;
+    top: 3px;
+  }
+}

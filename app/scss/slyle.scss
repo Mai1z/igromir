@@ -1,7 +1,7 @@
 $main-bgcolor: #4DBC08;
 $second-bgcolor: #FF4C17;
 $elem-bgcolor: #EBFFDE;
-$main-font: 'Ubuntu', sans-serif;
+$main-font: 'Ubuntu';
 $main-font-color: #000000;
 $second-font-color: #ffffff;
 $item-color: #C4C4C4;
@@ -127,4 +127,11 @@ button:hover {
 // ======= Каталог ========
 
 @import 'nav-line';
+
+// ======= Категория товаров ========
+
+@import 'category';
+@import 'sub-cat';
+@import 'sort';
+@import 'toys';
 
