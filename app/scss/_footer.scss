@@ -33,37 +33,38 @@
     }
 }
 
-.footer-inner__links {
+.footer__item {
   width: 100%;
-  max-width: 300px;
-  display: flex;
-  flex-direction: column;
-    a {
-      text-transform: none;
-      margin-bottom: 18px;
-    }
-    h2 {
-      font-size: 16px;
-      margin-bottom: 25px;
-      position: relative;
-        &:after {
-          content: '\e901';
-          font-family: 'icomoon';
-          position: absolute;
-          right: -25px;
-          top: 2px;
-          transform: rotate(90deg);
-          color: $main-bgcolor;
+  max-width: 250px;
+  margin-left: 20px;
+    ul {
+      margin-top: 30px;
+      list-style-type: none;
+        li {
+          margin-bottom: 15px;
+            a {
+              text-transform: none;
+              font-size: 12px;
+              text-decoration: none;
+                &:hover {
+                  color: $main-bgcolor;
+                } 
+            }
+            &:before {
+              font-family: 'icomoon';
+              color: $main-bgcolor;
+            }  
         }
     }
-}
-
-.footer-inner__links .show {
-
+    h4 {
+      margin-top: 15px;
+      cursor: pointer;
+      font-size: 16px;
+    }
 }
 
 .footer-inner-links__more {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 @media (max-width: 760px) {
@@ -78,22 +79,57 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 10px;
       img {
         display: none;
       }
   }
-  .footer-inner__links {
-    width: auto;
-    text-align: center;
-    margin-top: 25px;
-    max-height: 20px;
-    overflow: hidden;
-      // a {
-      //   display: none;
-      // }
-      // h2 {
-      //   margin-bottom: 0;
-      // }
+
+  .footer__item {
+    margin-left: 0;
+    ul {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.2s linear;
+      margin-top: 10px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    h4 {
+      margin-top: 10px;
+      margin-bottom: 0px;
+      position: relative;
+      transition: 0.2s linear;
+      text-align: center;
+        &:after {
+          content: "\e902";
+          font-family: 'icomoon';
+          color: $main-bgcolor;
+          font-size: 15px;
+          margin-left: 10px;
+          top: 4px;
+          position: absolute;
+          transform: rotate(270deg);
+          transition: 0.2s linear;
+        }
+    }
+  }
+
+  .footer__wrap.activefoot {
+    &:after {
+      transform: rotate(360deg);
+    }
+  }
+
+  .footer__item.activefoot {
+    h4 {
+      &:after {
+        transform: rotate(360deg);
+      }
+    }
+    ul {
+      max-height: 140px;
+    }
   }
 }
 

@@ -110,6 +110,8 @@ button:hover {
   background-color: $main-bgcolor;
 }
 
+// ======= Главная ========
+
 @import 'header';
 @import 'cat-line';
 @import 'main-slider';
@@ -121,3 +123,8 @@ button:hover {
 @import 'seo';
 @import 'subscribe';
 @import 'footer';
+
+// ======= Каталог ========
+
+@import 'nav-line';
+

@@ -65,11 +65,17 @@
     margin-top: 24px;
     display: grid;
     grid-auto-flow: column;
-    grid-template-rows: 192px;
-    overflow: hidden;
-    grid-template-columns: repeat(4, 210px);
+    grid-template-columns: repeat(12, 210px);
     grid-template-rows: 145px;
     grid-gap: 10px 15px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .all-cat__inner::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 
   .all-cat-inner__item {

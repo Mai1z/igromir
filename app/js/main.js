@@ -6,6 +6,8 @@ $('.main-slider__inner').slick({
   arrows: false,
 });
 
+// ===== Мобильное меню ===== 
+
 function toggleMenu() {
   $('.header-wrapper__btn').toggleClass('closewrap');
   $('.header-mobmenu').toggleClass('activewrap');
@@ -19,11 +21,20 @@ $('.header-wrapper').on('click', function(e) {
   return 0;
 });
 
+// ===== Действия в моб. меню =====
+
 $('.catalog__btn').on('click', function() {
   $('.header-wrapper__inner').toggleClass('show');
   $('.header-wrapper__catalog').toggleClass('show');
 });
 
-$('.footer-inner__links').on('click', function() {
-  $(this).toggleClass('show');
+// ===== Списки футера =====  
+
+$('.footer__wrap').on('click', function() {
+	$(this).toggleClass('activefoot');
 });
+
+$('.footer__item').on('click', function() {
+	$(this).toggleClass('activefoot');
+});
+
