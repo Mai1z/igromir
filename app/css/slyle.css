@@ -1452,3 +1452,199 @@ button:hover {
   background-color: #4DBC08;
   color: #fff;
 }
+
+.select__price {
+  margin-bottom: 40px;
+}
+
+#slider-summ_attachment {
+  background-color: #2E7204;
+  height: 4px;
+  border-radius: 0;
+  border-color: transparent;
+  border: 0;
+  box-shadow: none;
+  top: 8px;
+  padding: 0 7px;
+  margin-bottom: 20px;
+}
+
+.noUi-connects {
+  border-radius: 0;
+}
+
+.noUi-connect {
+  background-color: #4DBC08;
+}
+
+html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
+  right: -9px;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #4DBC08;
+  transition: border-color .3s;
+  top: -5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.noUi-horizontal .noUi-handle:active,
+.noUi-horizontal .noUi-handle:focus {
+  border-color: var(--clr-helper);
+}
+
+.noUi-horizontal .noUi-handle:after,
+.noUi-horizontal .noUi-handle:before {
+  display: none;
+}
+
+.summ_attachment-element {
+  display: flex;
+  width: 100%;
+  padding: 10px 6px;
+  border: 1px solid #D2D2D2;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.summ_attachment-element input {
+  max-width: 128px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.summ_attachment-element input:last-child {
+  text-align: right;
+}
+
+.summ_attachment-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.summ_attachment-container label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.select__brand,
+.select__exist {
+  margin-bottom: 20px;
+}
+
+.select__brand h4,
+.select__exist h4 {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.select__brand form,
+.select__exist form {
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+
+.select__exist form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.summ_attachment-box {
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.2s linear;
+  padding-right: 5px;
+  margin-right: -5px;
+}
+
+.select__btn.active:after {
+  transition: 0.2s linear;
+  transform: rotate(90deg);
+}
+
+.select__btn {
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.select__btn:after {
+  content: '\e901';
+  font-family: 'icomoon';
+  transform: rotate(-90deg);
+  position: absolute;
+  color: #D2D2D2;
+  right: 0;
+  font-size: 12px;
+  top: 5px;
+  transition: 0.2s linear;
+}
+
+.select__checkbox {
+  position: relative;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.select__checkbox.lock label {
+  opacity: 0.3;
+}
+
+.select__check-inp {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.select__check-inp:checked + .select__check-lab:after {
+  opacity: 1;
+}
+
+.select__check-lab {
+  font-size: 14px;
+  padding-left: 40px;
+  cursor: pointer;
+  padding-top: 3px;
+}
+
+.select__check-lab:before {
+  content: '';
+  background-color: #fff;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #D2D2D2;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.select__check-lab:after {
+  content: '';
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: url("../img/check.svg") no-repeat;
+  background-size: 23px 23px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: 0.1s ease-in-out;
+}

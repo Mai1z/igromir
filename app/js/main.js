@@ -38,3 +38,60 @@ $('.footer__item').on('click', function() {
 	$(this).toggleClass('activefoot');
 });
 
+// ===== Двойной range =====
+
+let nonLinearSlider = document.getElementById('slider-summ_attachment');
+let padding = [0, 99999];
+let temp = [];
+let val;
+let separator = ' ';
+let inputPrettify = $('.summ_attachment-box input');
+let stepSlider = 1;
+
+noUiSlider.create(nonLinearSlider, {
+  connect: true,
+  behaviour: 'tap',
+  start: [1688, 99999],
+  step: stepSlider,
+  range: {
+    'min': [padding[0]],
+    '20%': [1000, 1],
+    '40%': [5000, 1000],
+    '60%': [10000, 5000],
+    '80%': [50000, 10000],
+    'max': [padding[1]]
+  }
+});
+
+let nodes = [
+    document.getElementById('lower-value'), // 0
+    document.getElementById('upper-value')  // 1
+];
+
+nonLinearSlider.noUiSlider.on('update', function (values, handle, unencoded, isTap, positions) {
+    temp[handle] = parseInt( values[handle] );
+    val = temp[handle].toString();
+  	val = val.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + separator);
+    nodes[handle].value = val;
+
+});
+
+// ===== Аккордеон =====
+
+let acc = document.getElementsByClassName("select__btn");
+let i;
+
+for (i=0; i<acc.length; i++) {
+  acc[i].addEventListener ("click", function () {
+    this.classList.toggle("active");
+
+    let panel = this.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
