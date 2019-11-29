@@ -2,7 +2,10 @@
 // ====== Nav Line ======
 
 .nav-line__inner {
+  display: flex;
+  justify-content: space-between;
   margin: 30px 0;
+  align-items: center;
   ul {
     list-style-type: none;
     display: flex;
@@ -31,4 +34,29 @@
         font-size: 11px;
       }
   }
+}
+
+.nav-line__number {
+  display: flex;
+  position: relative;
+  margin-right: 15px;
+    p {
+      margin: 0 5px;
+    }
+    &:before {
+      content: '\e902';
+      font-family: 'icomoon';
+      color: $border-color;
+      position: absolute;
+      top: 1px;
+      left: -10px;
+    }
+    &:after {
+      content: '\e901';
+      font-family: 'icomoon';
+      color: $main-bgcolor;
+      position: absolute;
+      top: 1px;
+      right: -12px;
+    }
 }

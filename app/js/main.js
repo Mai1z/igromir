@@ -6,6 +6,22 @@ $('.main-slider__inner').slick({
   arrows: false,
 });
 
+$('.toy-intro__big').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  // asNavFor: '.category-dslider__img'
+});
+
+$('.toy-intro__small').slick({
+  asNavFor: '.toy-intro__big',
+  arrows: false,
+  focusOnSelect: true,
+  variableWidth: true,
+  infinite: true,
+});
+
 // ===== Мобильное меню ===== 
 
 function toggleMenu() {
@@ -94,4 +110,6 @@ for (i=0; i<acc.length; i++) {
     }
   });
 }
+
+
 
