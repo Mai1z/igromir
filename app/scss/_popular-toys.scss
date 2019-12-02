@@ -2,7 +2,7 @@
 //  ============ Популярные товары ===========
 
 .popular-toys__inner {
-  margin-bottom: 52px;
+  margin-bottom: 82px;
     h1 {
       font-size: 30px;
       line-height: 34px;
@@ -11,9 +11,56 @@
 }
 
 .popular-toys-inner__slider {
-  display: flex;
-  margin: 0 -15px;
+  display: flex !important;
+  margin: 15px 0px;
+  outline: none;
 }
+
+.slick-btn.popular.slick-next {
+  right: -8px;
+}
+
+.slick-btn.popular.slick-prev {
+  left: -8px;
+}
+
+
+// .slick-dots-popular {
+//   position: absolute;
+//   display: flex;
+//   bottom: -35px;
+//   left: 47%;
+//   list-style-type: none;
+// }
+
+// .slick-dots-popular li button {
+//   width: 0;
+//   height: 0;
+//   overflow: hidden;
+//   padding: 0;
+//   margin-right: 25px;
+//     &:after {
+//       content: '';
+//       width: 16px;
+//       height: 16px;
+//       background-color: $main-bgcolor;
+//       display: block;
+//       position: absolute;
+//       border-radius: 50%;
+//       transition: 0.2s ease-in-out;
+//       border: 3px solid $main-bgcolor;
+//     }
+// }
+
+// .slick-dots-popular li.slick-active button {
+//   &:after {
+//     border: 3px solid $main-bgcolor;
+//     background-color: #fff;
+//     transition: 0.2s linear;
+//   }
+// }
+
+
 
 .popular-toys-inner-slider__item {
   width: 100%;
@@ -25,15 +72,79 @@
   cursor: pointer;
   transition: 0.2s linear;
   padding: 18px 15px 27px 15px;
+  position: relative;
     img {
       width: 100%;
       max-height: 238px;
     }
+
+}
+
+.popular-toys__check {
+  cursor: pointer;
+  -webkit-appearance: none;
+    &:after {
+      content: '\e904';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'icomoon';
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background-color: $border-color;
+      color: #fff;
+      font-size: 17px;
+      top: 10px;
+      right: 10px;
+      transition: 0.2s linear;
+    }
+}
+
+.popular-toys__check:checked {
+  &:after {
+    background-color: $main-bgcolor;
+    transition: 0.2s linear;
+  }
+}
+
+.popular-toys__buy {
+  cursor: pointer;
+  -webkit-appearance: none;
+    &:after {
+      content: '\e903';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'icomoon';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $main-bgcolor;
+      color: #fff;
+      font-size: 27px;
+      bottom: 10px;
+      right: 10px;
+      transition: 0.2s linear;
+    }
+}
+
+.popular-toys__buy:checked {
+  &:after {
+    background-color: $second-bgcolor;
+    transition: 0.2s linear;
+  }
+}
+
+.popular-toys-inner-slider__item.home {
+  margin: 0 15px; 
 }
 
 .popular-toys-inner-slider__item:hover {
   box-shadow: 0px 0px 10px $main-bgcolor;
-  border: none;
+  border: 1px solid transparent;
 }
 
 .popular-toys-inner-slider-item__text {
@@ -58,7 +169,7 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1020px) {
   .popular-toys__inner {
     margin-bottom: 22px;
   }

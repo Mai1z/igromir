@@ -3,7 +3,31 @@ $('.main-slider__inner').slick({
   dots: false,
   speed: 300,
   slidesToShow: 1,
-  arrows: false,
+  arrows: true,
+  nextArrow: '<div type="button" class="slick-btn slick-next"></div>',
+  prevArrow: '<div type="button" class="slick-btn slick-prev"></div>',
+  infinite: false,
+});
+
+$('.middle-slider-inner__wrapper').slick({
+  dots: true,
+  speed: 300,
+  slidesToShow: 1,
+  arrows: true,
+  nextArrow: '<div type="button" class="slick-btn slick-next"></div>',
+  prevArrow: '<div type="button" class="slick-btn slick-prev"></div>',
+  infinite: false,
+});
+
+$('.popular-toys-inner__slider.home').slick({
+  dots: false,
+  speed: 300,
+  arrows: true,
+  nextArrow: '<div type="button" class="slick-btn popular slick-next"></div>',
+  prevArrow: '<div type="button" class="slick-btn popular slick-prev"></div>',
+  infinite: false,
+  dotsClass: 'slick-dots-popular',
+  variableWidth: true,
 });
 
 $('.toy-intro__big').slick({
@@ -21,6 +45,8 @@ $('.toy-intro__small').slick({
   variableWidth: true,
   infinite: true,
 });
+
+$('select').styler();
 
 // ===== Мобильное меню ===== 
 

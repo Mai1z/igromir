@@ -6,6 +6,8 @@
 	<title>Игромир</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&subset=cyrillic,cyrillic-ext">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.theme.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/slyle.css">
 </head>
@@ -29,10 +31,22 @@
 						<object data="img/header/burger.svg" type="image/svg+xml"></object>
 						<a href="#">Каталог товаров</a>
 					</button>
-					<article class="header-inner__search">
+					<div class="header-inner__search">
 						<div class="header-inner-search__input">
-							<object data="img/header/search.svg" type="image/svg+xml"></object>
-							Поиск
+							<div class="search">
+								<input type="text" placeholder=" ">
+								<div>
+										<svg>
+												<use xlink:href="#path">
+										</svg>
+								</div>
+						</div>
+								
+						<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+								<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 28" id="path">
+										<path d="M32.9418651,-20.6880772 C37.9418651,-20.6880772 40.9418651,-16.6880772 40.9418651,-12.6880772 C40.9418651,-8.68807717 37.9418651,-4.68807717 32.9418651,-4.68807717 C27.9418651,-4.68807717 24.9418651,-8.68807717 24.9418651,-12.6880772 C24.9418651,-16.6880772 27.9418651,-20.6880772 32.9418651,-20.6880772 L32.9418651,-29.870624 C32.9418651,-30.3676803 33.3448089,-30.770624 33.8418651,-30.770624 C34.08056,-30.770624 34.3094785,-30.6758029 34.4782612,-30.5070201 L141.371843,76.386562" transform="translate(83.156854, 22.171573) rotate(-225.000000) translate(-83.156854, -22.171573)"></path>
+								</symbol>
+						</svg>
 						</div>
 						<div class="header-inner-search__menu">
 							<select name="list" id="header-list">
@@ -42,8 +56,8 @@
 								<option value="1">Раздел</option>
 							</select>
 						</div>	
-					</article>
-					<article class="header-inner__icons">
+					</div>
+					<div class="header-inner__icons">
 						<div class="header-inner-icons__item">
 							<object data="img/header/log-in.svg" type="image/svg+xml"></object>
 						</div>
@@ -54,7 +68,7 @@
 							<object data="img/header/shop.svg" type="image/svg+xml"></object>
 						</div>
 						<p>9 999 999 руб.</p>		
-					</article>	
+					</div>	
 			</div>
 
 			<div class="header__inner-mobile">
@@ -211,17 +225,58 @@
 				<div class="middle-slider__inner">
 					
 					<div class="middle-slider-inner__wrapper">
-						<div class="middle-slider-inner-wrapper__text">
-							<h1>Санки детские "НИКА-ДЕТЯМ"</h1>
-							<img src="img/middle-slider/sanki.png" alt="img">
-							<div class="middle-slider-inner-wrapper__price">
-								<h2>9 999 200 руб.</h2>
-								<h3>99 200 руб.</h3>
+						<div class="middle-slider__slick">
+							<div class="middle-slider-inner-wrapper__text">
+								<h1>Санки детские "НИКА-ДЕТЯМ"</h1>
+								<img src="img/middle-slider/sanki.png" alt="img">
+								<div class="middle-slider-inner-wrapper__price">
+									<h2>9 999 200 руб.</h2>
+									<h3>99 200 руб.</h3>
+								</div>
+							</div>
+							<div class="middle-slider-inner-wrapper__img">
+								<img src="img/middle-slider/sanki.png" alt="img">
 							</div>
 						</div>
-						<div class="middle-slider-inner-wrapper__img">
-							<img src="img/middle-slider/sanki.png" alt="img">
-						</div>		
+						<div class="middle-slider__slick">
+							<div class="middle-slider-inner-wrapper__text">
+								<h1>Санки детские "НИКА-ДЕТЯМ"</h1>
+								<img src="img/middle-slider/sanki.png" alt="img">
+								<div class="middle-slider-inner-wrapper__price">
+									<h2>9 999 200 руб.</h2>
+									<h3>99 200 руб.</h3>
+								</div>
+							</div>
+							<div class="middle-slider-inner-wrapper__img">
+								<img src="img/middle-slider/sanki.png" alt="img">
+							</div>
+						</div>
+						<div class="middle-slider__slick">
+							<div class="middle-slider-inner-wrapper__text">
+								<h1>Санки детские "НИКА-ДЕТЯМ"</h1>
+								<img src="img/middle-slider/sanki.png" alt="img">
+								<div class="middle-slider-inner-wrapper__price">
+									<h2>9 999 200 руб.</h2>
+									<h3>99 200 руб.</h3>
+								</div>
+							</div>
+							<div class="middle-slider-inner-wrapper__img">
+								<img src="img/middle-slider/sanki.png" alt="img">
+							</div>
+						</div>
+						<div class="middle-slider__slick">
+							<div class="middle-slider-inner-wrapper__text">
+								<h1>Санки детские "НИКА-ДЕТЯМ"</h1>
+								<img src="img/middle-slider/sanki.png" alt="img">
+								<div class="middle-slider-inner-wrapper__price">
+									<h2>9 999 200 руб.</h2>
+									<h3>99 200 руб.</h3>
+								</div>
+							</div>
+							<div class="middle-slider-inner-wrapper__img">
+								<img src="img/middle-slider/sanki.png" alt="img">
+							</div>
+						</div>
 					</div>
 					
 					<div class="middle-slider-inner__item">
@@ -255,41 +310,204 @@
 		<div class="container">
 			<div class="popular-toys__inner">
 				<h1>Популярные товары</h1>
-				<div class="popular-toys-inner__slider">
 
-					<div class="popular-toys-inner-slider__item">
-						<img src="img/popular-toys/plane.png" alt="img">
-						<div class="popular-toys-inner-slider-item__text">
-							<p>Глазки-мини Мишка Косолапый без шляпы</p>
-							<h3>9 999 200 руб.</h3>
+					<div class="popular-toys-inner__slider home">
+
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/plane.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
 						</div>
-						<svg class="popular-toys__like" width="34" height="34">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/popular-toys/like.svg#like">
-						</svg>
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/red-car.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
+						</div>
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/horse.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
+						</div>
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/doll.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
+						</div>
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/plane.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
+						</div>
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/red-car.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
+						</div>
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/horse.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
+						</div>
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/doll.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
+						</div>
 
 					</div>
-					<div class="popular-toys-inner-slider__item">
-						<img src="img/popular-toys/red-car.png" alt="img">
-						<div class="popular-toys-inner-slider-item__text">
-							<p>Глазки-мини Мишка Косолапый без шляпы</p>
-							<h3>9 999 200 руб.</h3>
+					<!-- <div class="popular-toys-inner__slider home">
+
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/plane.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
 						</div>
-					</div>
-					<div class="popular-toys-inner-slider__item">
-						<img src="img/popular-toys/horse.png" alt="img">
-						<div class="popular-toys-inner-slider-item__text">
-							<p>Глазки-мини Мишка Косолапый без шляпы</p>
-							<h3>9 999 200 руб.</h3>
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/red-car.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
 						</div>
-					</div>
-					<div class="popular-toys-inner-slider__item">
-						<img src="img/popular-toys/doll.png" alt="img">
-						<div class="popular-toys-inner-slider-item__text">
-							<p>Глазки-мини Мишка Косолапый без шляпы</p>
-							<h3>9 999 200 руб.</h3>
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/horse.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
 						</div>
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/doll.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
+						</div>
+
 					</div>
-				</div>
+					<div class="popular-toys-inner__slider home">
+
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/plane.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
+						</div>
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/red-car.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
+						</div>
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/horse.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
+						</div>
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/doll.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
+						</div>
+
+					</div>
+					<div class="popular-toys-inner__slider home">
+
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/plane.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
+						</div>
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/red-car.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
+						</div>
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/horse.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
+						</div>
+						<div class="popular-toys-inner-slider__item home">
+							<img src="img/popular-toys/doll.png" alt="img">
+							<div class="popular-toys-inner-slider-item__text">
+								<p>Глазки-мини Мишка Косолапый без шляпы</p>
+								<h3>9 999 200 руб.</h3>
+							</div>
+							<input class="popular-toys__check" type="checkbox">
+							<input class="popular-toys__buy" type="checkbox">
+						</div>
+
+					</div> -->
+
 			</div>
 		</div>
 	</section>
@@ -451,7 +669,8 @@
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>		
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>		
 	<script src="js/main.js"></script>
 </body>
 </html>
