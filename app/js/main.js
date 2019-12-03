@@ -20,14 +20,15 @@ $('.middle-slider-inner__wrapper').slick({
 });
 
 $('.popular-toys-inner__slider.home').slick({
-  dots: false,
+  dots: true,
   speed: 300,
   arrows: true,
   nextArrow: '<div type="button" class="slick-btn popular slick-next"></div>',
   prevArrow: '<div type="button" class="slick-btn popular slick-prev"></div>',
   infinite: false,
   dotsClass: 'slick-dots-popular',
-  variableWidth: true,
+  slidesToShow: 4,
+  slidesToScroll: 4,
 });
 
 $('.toy-intro__big').slick({

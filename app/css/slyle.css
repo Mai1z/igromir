@@ -99,6 +99,13 @@ button:hover {
   background-color: #4DBC08;
 }
 
+@media (max-width: 590px) {
+  .container {
+    max-width: 1190px;
+    padding: 0 10px;
+  }
+}
+
 .header__inner {
   width: 100%;
   display: grid;
@@ -195,6 +202,7 @@ button:hover {
   align-items: center;
   padding: 5px 18px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin: 0 -10px;
 }
 
 .header-inner-mobile__burg {
@@ -253,7 +261,7 @@ button:hover {
   width: 100%;
   min-height: 750px;
   height: 100vh;
-  z-index: 2;
+  z-index: 3;
   transform: translateX(-100%);
   transition: 0.8s linear;
   transition-delay: 0.3s;
@@ -615,6 +623,12 @@ html {
   }
 }
 
+@media (max-width: 590px) {
+  .header__inner-mobile {
+    margin: 0;
+  }
+}
+
 .cat-line {
   display: flex;
   align-items: center;
@@ -777,14 +791,14 @@ html {
 
 @media (max-width: 1020px) {
   .all-cat__inner {
-    padding: 0 18px;
+    padding: 0 8px;
   }
   .all-cat {
     margin-bottom: 48px;
   }
   .all-cat h1 {
     font-size: 20px;
-    padding: 0 18px;
+    padding: 0 8px;
   }
   .all-cat__inner {
     margin-top: 24px;
@@ -1065,7 +1079,7 @@ html {
 
 .popular-toys-inner__slider {
   display: flex !important;
-  margin: 15px 0px;
+  margin: 15px -13px;
   outline: none;
 }
 
@@ -1077,11 +1091,45 @@ html {
   left: -8px;
 }
 
+.slick-dots-popular {
+  position: absolute;
+  display: flex;
+  bottom: -35px;
+  left: 47%;
+  list-style-type: none;
+}
+
+.slick-dots-popular li button {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin-right: 25px;
+}
+
+.slick-dots-popular li button:after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-color: #4DBC08;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+  border: 3px solid #4DBC08;
+}
+
+.slick-dots-popular li.slick-active button:after {
+  border: 3px solid #4DBC08;
+  background-color: #fff;
+  transition: 0.2s linear;
+}
+
 .popular-toys-inner-slider__item {
   width: 100%;
   max-width: 270px;
   max-height: 360px;
-  margin: 0 15px;
+  margin: 10px 15px;
   border-radius: 5px;
   border: 1px solid #D2D2D2;
   cursor: pointer;
@@ -1152,7 +1200,7 @@ html {
 }
 
 .popular-toys-inner-slider__item.home {
-  margin: 0 15px;
+  margin: 10px 15px;
 }
 
 .popular-toys-inner-slider__item:hover {
@@ -1175,16 +1223,26 @@ html {
   font-size: 18px;
 }
 
+.popular-toys__mobile {
+  display: flex;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 0 -15px;
+}
+
+.popular-toys__mobile::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 @media (max-width: 1020px) {
   .popular-toys__inner {
-    padding: 0 18px;
+    padding: 0 8px;
   }
   .popular-toys__inner h1 {
     font-size: 20px;
   }
-}
-
-@media (max-width: 1020px) {
   .popular-toys__inner {
     margin-bottom: 22px;
   }
@@ -1203,8 +1261,9 @@ html {
   .popular-toys-inner__slider {
     overflow: hidden;
     padding: 5px 0;
+    display: none !important;
   }
-  .popular-toys-inner-slider__item {
+  .popular-toys-inner-slider__item.home {
     min-width: 210px;
     margin-right: 0;
   }
@@ -1273,7 +1332,7 @@ html {
 
 @media (max-width: 1020px) {
   .action__inner {
-    padding: 0 18px;
+    padding: 0 8px;
     margin-bottom: 24px;
   }
   .action__inner h1 {
@@ -1372,7 +1431,7 @@ html {
 @media (max-width: 1020px) {
   .popular-brands__inner {
     margin-bottom: 55px;
-    padding: 0 20px;
+    padding: 0 8px;
   }
   .popular-brands__inner h1 {
     font-size: 20px;
@@ -1416,7 +1475,7 @@ html {
 @media (max-width: 1020px) {
   .seo__inner {
     margin-bottom: 10px;
-    padding: 0 18px;
+    padding: 0 8px;
   }
   .seo__inner h1 {
     font-size: 20px;
@@ -2084,4 +2143,3 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .toy-intro__small:first-child {
   max-width: 408px;
 }
-                                           

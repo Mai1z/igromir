@@ -12,7 +12,7 @@
 
 .popular-toys-inner__slider {
   display: flex !important;
-  margin: 15px 0px;
+  margin: 15px -13px;
   outline: none;
 }
 
@@ -25,40 +25,40 @@
 }
 
 
-// .slick-dots-popular {
-//   position: absolute;
-//   display: flex;
-//   bottom: -35px;
-//   left: 47%;
-//   list-style-type: none;
-// }
+.slick-dots-popular {
+  position: absolute;
+  display: flex;
+  bottom: -35px;
+  left: 47%;
+  list-style-type: none;
+}
 
-// .slick-dots-popular li button {
-//   width: 0;
-//   height: 0;
-//   overflow: hidden;
-//   padding: 0;
-//   margin-right: 25px;
-//     &:after {
-//       content: '';
-//       width: 16px;
-//       height: 16px;
-//       background-color: $main-bgcolor;
-//       display: block;
-//       position: absolute;
-//       border-radius: 50%;
-//       transition: 0.2s ease-in-out;
-//       border: 3px solid $main-bgcolor;
-//     }
-// }
+.slick-dots-popular li button {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin-right: 25px;
+    &:after {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background-color: $main-bgcolor;
+      display: block;
+      position: absolute;
+      border-radius: 50%;
+      transition: 0.2s ease-in-out;
+      border: 3px solid $main-bgcolor;
+    }
+}
 
-// .slick-dots-popular li.slick-active button {
-//   &:after {
-//     border: 3px solid $main-bgcolor;
-//     background-color: #fff;
-//     transition: 0.2s linear;
-//   }
-// }
+.slick-dots-popular li.slick-active button {
+  &:after {
+    border: 3px solid $main-bgcolor;
+    background-color: #fff;
+    transition: 0.2s linear;
+  }
+}
 
 
 
@@ -66,7 +66,7 @@
   width: 100%;
   max-width: 270px;
   max-height: 360px;
-  margin: 0 15px;
+  margin: 10px 15px; 
   border-radius: 5px;
   border: 1px solid #D2D2D2;
   cursor: pointer;
@@ -139,7 +139,7 @@
 }
 
 .popular-toys-inner-slider__item.home {
-  margin: 0 15px; 
+  margin: 10px 15px; 
 }
 
 .popular-toys-inner-slider__item:hover {
@@ -160,16 +160,26 @@
     }
 }
 
+.popular-toys__mobile {
+  display: flex;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 0 -15px;
+}
+
+.popular-toys__mobile::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 @media (max-width: 1020px) {
   .popular-toys__inner {
-    padding: 0 18px;
+    padding: 0 8px;
       h1 {
         font-size: 20px;
       }
   }
-}
-
-@media (max-width: 1020px) {
   .popular-toys__inner {
     margin-bottom: 22px;
   }
@@ -188,8 +198,9 @@
   .popular-toys-inner__slider {
     overflow: hidden;
     padding: 5px 0;
+    display: none !important;
   }
-  .popular-toys-inner-slider__item {
+  .popular-toys-inner-slider__item.home {
     min-width: 210px;
     margin-right: 0;
   }

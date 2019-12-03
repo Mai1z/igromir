@@ -91,6 +91,7 @@
   align-items: center;
   padding: 5px 18px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin: 0 -10px;
 }
 
 .header-inner-mobile__burg {
@@ -146,7 +147,7 @@
   width: 100%;
   min-height: 750px;
   height: 100vh;
-  z-index: 2;
+  z-index: 3;
   transform: translateX(-100%);
   transition: 0.8s linear;
   transition-delay: 0.3s;
@@ -490,5 +491,11 @@ html {
 
   .header__inner-mobile {
     display: flex;
+  }
+}
+
+@media (max-width: 590px) {
+  .header__inner-mobile {
+    margin: 0;
   }
 }

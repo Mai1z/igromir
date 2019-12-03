@@ -107,7 +107,14 @@ button:hover {
 }
 
 .green {
-  background-color: $main-bgcolor;
+	background-color: $main-bgcolor;
+}
+
+@media (max-width: 590px) {
+	.container {
+		max-width: 1190px;
+		padding: 0 10px;
+	}
 }
 
 // ======= Главная ========
