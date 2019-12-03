@@ -1,4 +1,6 @@
 
+
+
 $('.main-slider__inner').slick({
   dots: false,
   speed: 300,

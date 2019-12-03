@@ -161,7 +161,7 @@
 }
 
 .popular-toys__mobile {
-  display: flex;
+  display: none;
   overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -203,5 +203,8 @@
   .popular-toys-inner-slider__item.home {
     min-width: 210px;
     margin-right: 0;
+  }
+  .popular-toys__mobile {
+    display: flex;
   }
 }
