@@ -13,3 +13,21 @@
   grid-column-gap: 30px;
   grid-template-rows: auto;
 }
+
+@media (max-width: 790px) {
+  .category {
+    h1 {
+      margin-bottom: 15px;
+      font-size: 23px;
+    }
+  }
+  .category__inner-left {
+    // display: none;
+  }
+  .category__inner {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 30px;
+    grid-template-rows: auto;
+  }
+}

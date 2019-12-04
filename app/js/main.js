@@ -1,5 +1,5 @@
 
-
+$('select').styler();
 
 $('.main-slider__inner').slick({
   dots: false,
@@ -49,8 +49,6 @@ $('.toy-intro__small').slick({
   infinite: true,
 });
 
-$('select').styler();
-
 // ===== Мобильное меню ===== 
 
 function toggleMenu() {
@@ -82,6 +80,28 @@ $('.footer__wrap').on('click', function() {
 $('.footer__item').on('click', function() {
 	$(this).toggleClass('activefoot');
 });
+
+// ===== Аккордеон =====
+
+
+let acc = document.getElementsByClassName("select__btn");
+let i;
+
+for (i=0; i<acc.length; i++) {
+  acc[i].addEventListener ("click", function () {
+    this.classList.toggle("active");
+
+    let panel = this.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+
 
 // ===== Двойной range =====
 
@@ -121,13 +141,13 @@ nonLinearSlider.noUiSlider.on('update', function (values, handle, unencoded, isT
 
 });
 
-// ===== Аккордеон =====
+// ===== Аккордеон 2 =====
 
-let acc = document.getElementsByClassName("select__btn");
-let i;
+let acc2 = document.getElementsByClassName("mob-select__btn");
+let j;
 
-for (i=0; i<acc.length; i++) {
-  acc[i].addEventListener ("click", function () {
+for (j=0; j<acc.length; j++) {
+  acc2[j].addEventListener ("click", function () {
     this.classList.toggle("active");
 
     let panel = this.nextElementSibling;
@@ -135,10 +155,11 @@ for (i=0; i<acc.length; i++) {
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.maxHeight = "100%";
     }
   });
 }
+
 
 
 

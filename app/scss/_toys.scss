@@ -26,6 +26,7 @@
 .wrapper-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
     ul {
       display: flex;
       position: relative;
@@ -83,4 +84,29 @@
 .wrapper-list .green {
   background-color: $main-bgcolor;
   color: #fff;
+}
+
+@media (max-width: 950px) {
+  .toys__items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(130px, 210px));
+    grid-gap: 24px 15px;
+    margin-bottom: 25px;
+    justify-content: center;
+  }
+  .popular-toys__buy {
+    margin-bottom: 50px;
+      &:after {
+        right: 37%;
+      }
+  }
+}
+
+@media (max-width: 390px) {
+  .popular-toys__buy {
+    margin-bottom: 50px;
+      &:after {
+        right: 33%;
+      }
+  }
 }
