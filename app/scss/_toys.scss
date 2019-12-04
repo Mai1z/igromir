@@ -87,26 +87,30 @@
 }
 
 @media (max-width: 950px) {
-  .toys__items {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(130px, 210px));
-    grid-gap: 24px 15px;
-    margin-bottom: 25px;
-    justify-content: center;
-  }
-  .popular-toys__buy {
-    margin-bottom: 50px;
-      &:after {
-        right: 37%;
-      }
+  .toys {
+    .toys__items {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(130px, 210px));
+      grid-gap: 24px 15px;
+      margin-bottom: 25px;
+      justify-content: center;
+    }
+    .popular-toys__buy {
+      margin-bottom: 50px;
+        &:after {
+          right: 37%;
+        }
+    }
   }
 }
 
 @media (max-width: 390px) {
-  .popular-toys__buy {
-    margin-bottom: 50px;
-      &:after {
-        right: 33%;
-      }
+  .toys {
+    .popular-toys__buy {
+      margin-bottom: 50px;
+        &:after {
+          right: 33%;
+        }
+    }
   }
 }

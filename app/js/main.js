@@ -46,7 +46,9 @@ $('.toy-intro__small').slick({
   arrows: false,
   focusOnSelect: true,
   variableWidth: true,
-  infinite: true,
+  infinite: false,
+  slidesToShow: 4,
+  slidesToScroll: 1,
 });
 
 // ===== Мобильное меню ===== 

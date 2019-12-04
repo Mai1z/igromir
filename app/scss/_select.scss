@@ -310,9 +310,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   .category__inner {
     position: relative;
   }
-  .middle-slider-inner__wrapper {
-    display: none;
+
+  .select {
+    .middle-slider-inner__wrapper {
+      display: none;
+    }
   }
+  
   .select {
     overflow: hidden;
     max-height: 0;

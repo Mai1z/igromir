@@ -60,3 +60,9 @@
       right: -12px;
     }
 }
+
+@media (max-width: 760px) {
+  .nav-line {
+    display: none;
+  }
+}

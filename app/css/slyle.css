@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 38px;
 }
 
 p {
@@ -1841,6 +1841,12 @@ button:hover {
   right: -12px;
 }
 
+@media (max-width: 760px) {
+  .nav-line {
+    display: none;
+  }
+}
+
 .category h1 {
   margin-bottom: 40px;
 }
@@ -2169,26 +2175,26 @@ button:hover {
 }
 
 @media (max-width: 950px) {
-  .toys__items {
+  .toys .toys__items {
     display: grid;
     grid-template-columns: repeat(2, minmax(130px, 210px));
     grid-gap: 24px 15px;
     margin-bottom: 25px;
     justify-content: center;
   }
-  .popular-toys__buy {
+  .toys .popular-toys__buy {
     margin-bottom: 50px;
   }
-  .popular-toys__buy:after {
+  .toys .popular-toys__buy:after {
     right: 37%;
   }
 }
 
 @media (max-width: 390px) {
-  .popular-toys__buy {
+  .toys .popular-toys__buy {
     margin-bottom: 50px;
   }
-  .popular-toys__buy:after {
+  .toys .popular-toys__buy:after {
     right: 33%;
   }
 }
@@ -2521,7 +2527,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   .category__inner {
     position: relative;
   }
-  .middle-slider-inner__wrapper {
+  .select .middle-slider-inner__wrapper {
     display: none;
   }
   .select {
@@ -2549,28 +2555,177 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   }
 }
 
+.toy h1 {
+  font-size: 38px;
+}
+
+.toy h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
 .toy__inner {
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: minmax(300px, 700px) minmax(280px, 370px);
   grid-template-rows: auto;
+  grid-column-gap: 100px;
 }
 
-.toy-intro__big {
-  width: 408px;
-  height: 408px;
-  margin-bottom: 20px;
+.toy__intro {
+  margin-bottom: 25px;
 }
 
-.toy-intro__small {
+.toy__left {
+  margin-bottom: 50px;
+}
+
+.toy__left h5 {
+  margin-top: 15px;
+}
+
+.toy__left p {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.toy-intro-big__img {
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.toy-intro-big__img img {
+  max-width: 500px;
+}
+
+.toy-intro-small__img {
   display: flex;
+  width: 71px;
+  margin-right: 30px;
+  outline: none;
+  cursor: pointer;
 }
 
-.toy-intro__small img {
-  margin-right: 30px;
-  max-width: 71px;
-  max-height: 71px;
+.toy-intro-small__img img {
+  max-width: 100%;
 }
 
 .toy-intro__small:first-child {
   max-width: 408px;
+}
+
+.toy__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toy__price {
+  width: 100%;
+  border: 1px solid #D2D2D2;
+  border-radius: 5px;
+  margin-top: 25px;
+  padding: 24px 18px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.toy__price h1 {
+  margin-bottom: 28px;
+}
+
+.toy__price .popular-toys__check:after {
+  right: 15px;
+  top: 30px;
+}
+
+.toy-price__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.toy-price__info button {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 38px;
+  margin-right: 40px;
+  white-space: nowrap;
+}
+
+.toy-price-info__instock {
+  display: flex;
+  align-items: center;
+}
+
+.toy-price-info__instock img {
+  max-width: 25px;
+  margin-right: 10px;
+}
+
+.toy-price-info__instock p {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.toy__brand {
+  display: flex;
+  align-items: center;
+}
+
+.toy__brand img {
+  max-width: 110px;
+  margin-right: 20px;
+}
+
+.toy-brand__text p {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.toy-brand__text a {
+  text-transform: none;
+  color: #4DBC08;
+}
+
+@media (max-width: 1020px) {
+  .toy h1 {
+    font-size: 23px;
+  }
+  .toy h2 {
+    font-size: 20px;
+  }
+  .toy__price .popular-toys__check:after {
+    right: 15px;
+    top: 15px;
+  }
+}
+
+@media (max-width: 890px) {
+  .toy__price h1 {
+    margin-bottom: 5px;
+  }
+  .toy-price__info button {
+    margin-right: 0;
+    white-space: nowrap;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .toy__inner {
+    display: grid;
+    grid-template-columns: minmax(300px, 700px);
+    grid-template-rows: auto;
+    grid-column-gap: 100px;
+  }
+  .toy-intro-big__img img {
+    max-width: 300px;
+  }
 }
