@@ -57,7 +57,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 -15px 22px -15px;
+  margin: 0 0px 22px 0px;
 }
 
 footer {
@@ -88,7 +88,7 @@ button:hover {
   max-width: 1220px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 0px 25px;
 }
 
 .orange {
@@ -102,7 +102,7 @@ button:hover {
 @media (max-width: 590px) {
   .container {
     max-width: 1190px;
-    padding: 0 10px;
+    padding: 0 12px;
   }
 }
 
@@ -367,7 +367,7 @@ button:hover {
   align-items: center;
   padding: 5px 18px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  margin: 0 -10px;
+  margin: 0px -25px;
 }
 
 .header-inner-mobile__burg {
@@ -723,7 +723,7 @@ button:hover {
 
 @media (max-width: 590px) {
   .header__inner-mobile {
-    margin: 0;
+    margin: 0 -12px;
   }
 }
 
@@ -1737,20 +1737,20 @@ button:hover {
   }
   .footer__item ul {
     overflow: hidden;
-    max-height: 0;
     transition: max-height 0.2s linear;
+    max-height: 0;
     margin-top: 10px;
     text-align: center;
     margin-bottom: 0;
   }
-  .footer__item h4 {
+  .footer__wrap {
     margin-top: 10px;
     margin-bottom: 0px;
     position: relative;
     transition: 0.2s linear;
     text-align: center;
   }
-  .footer__item h4:after {
+  .footer__wrap:after {
     content: "\e902";
     font-family: 'icomoon';
     color: #4DBC08;
@@ -1761,14 +1761,8 @@ button:hover {
     transform: rotate(270deg);
     transition: 0.2s linear;
   }
-  .footer__wrap.activefoot:after {
+  .footer__wrap.active:after {
     transform: rotate(360deg);
-  }
-  .footer__item.activefoot h4:after {
-    transform: rotate(360deg);
-  }
-  .footer__item.activefoot ul {
-    max-height: 140px;
   }
 }
 
@@ -2483,6 +2477,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .mob-select__btn {
+  display: none;
   margin-bottom: 20px;
   width: 100%;
   max-width: 500px;
@@ -2529,6 +2524,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   }
   .select .middle-slider-inner__wrapper {
     display: none;
+  }
+  .mob-select__btn {
+    display: flex;
   }
   .select {
     overflow: hidden;
@@ -2719,6 +2717,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 @media (max-width: 760px) {
+  .toy__left {
+    margin-bottom: 10px;
+  }
   .toy__inner {
     display: grid;
     grid-template-columns: minmax(300px, 700px);

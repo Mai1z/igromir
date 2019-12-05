@@ -66,21 +66,30 @@ $('.header-wrapper').on('click', function(e) {
   return 0;
 });
 
+// ===== Аккордеон футер =====
+
+let foot = document.getElementsByClassName("footer__wrap");
+let k;
+
+for (k=0; k<foot.length; k++) {
+  foot[k].addEventListener ("click", function () {
+    this.classList.toggle("active");
+
+    let panel1 = this.nextElementSibling;
+
+    if (panel1.style.maxHeight) {
+      panel1.style.maxHeight = null;
+    } else {
+      panel1.style.maxHeight = panel1.scrollHeight + "px";
+    }
+  });
+}
+
 // ===== Действия в моб. меню =====
 
 $('.catalog__btn').on('click', function() {
   $('.header-wrapper__inner').toggleClass('show');
   $('.header-wrapper__catalog').toggleClass('show');
-});
-
-// ===== Списки футера =====  
-
-$('.footer__wrap').on('click', function() {
-	$(this).toggleClass('activefoot');
-});
-
-$('.footer__item').on('click', function() {
-	$(this).toggleClass('activefoot');
 });
 
 // ===== Аккордеон =====
@@ -148,7 +157,7 @@ nonLinearSlider.noUiSlider.on('update', function (values, handle, unencoded, isT
 let acc2 = document.getElementsByClassName("mob-select__btn");
 let j;
 
-for (j=0; j<acc.length; j++) {
+for (j=0; j<acc2.length; j++) {
   acc2[j].addEventListener ("click", function () {
     this.classList.toggle("active");
 
@@ -161,6 +170,8 @@ for (j=0; j<acc.length; j++) {
     }
   });
 }
+
+
 
 
 

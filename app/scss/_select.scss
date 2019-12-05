@@ -142,9 +142,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .select__checkbox.lock {
   label {
     opacity: 0.3;
-    &:after {
-
-    }
   }
 }
 
@@ -265,6 +262,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .mob-select__btn {
+  display: none;
   margin-bottom: 20px;
   width: 100%;
   max-width: 500px;
@@ -315,6 +313,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
     .middle-slider-inner__wrapper {
       display: none;
     }
+  }
+
+  .mob-select__btn {
+    display: flex;
   }
   
   .select {

@@ -170,6 +170,9 @@
 }
 
 @media (max-width: 760px) {
+  .toy__left {
+    margin-bottom: 10px;
+  }
   .toy__inner {
     display: grid;
     grid-template-columns: minmax(300px, 700px);
