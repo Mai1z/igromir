@@ -435,6 +435,7 @@ button:hover {
 
 .header-mobmenu.activewrap {
   transform: translateX(0%);
+  overflow: auto;
 }
 
 .header-wrapper {
@@ -444,6 +445,7 @@ button:hover {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 .header-wrapper h2 {
@@ -507,8 +509,8 @@ button:hover {
   transition: 0.4s ease-in-out;
   cursor: pointer;
   border: 1px solid #4DBC08;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   border-radius: 50%;
 }
 
@@ -554,10 +556,12 @@ button:hover {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
+  align-items: center;
 }
 
-.header-wrapper__logo img {
-  width: 200px;
+.header-wrapper__logo object {
+  width: 220px;
+  height: 54px;
 }
 
 .header-wrapper__catalog {
@@ -1648,10 +1652,6 @@ button:hover {
   max-width: 500px;
 }
 
-.footer-inner__contacts img {
-  margin-bottom: 24px;
-}
-
 .footer-inner__contacts h2 {
   font-size: 20px;
   margin-bottom: 25px;
@@ -1664,6 +1664,12 @@ button:hover {
 
 .footer-inner__contacts p {
   font-size: 12px;
+}
+
+.footer__logo {
+  width: 270px;
+  height: 72px;
+  margin-bottom: 25px;
 }
 
 .footer-inner-contacts__social {

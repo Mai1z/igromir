@@ -9,9 +9,6 @@
 .footer-inner__contacts {
   width: 100%;
   max-width: 500px;
-    img {
-      margin-bottom: 24px;
-    }
     h2 {
       font-size: 20px;
       margin-bottom: 25px;
@@ -23,6 +20,12 @@
     p {
       font-size: 12px;
     }
+}
+
+.footer__logo {
+  width: 270px;
+  height: 72px;
+  margin-bottom: 25px;
 }
 
 .footer-inner-contacts__social {

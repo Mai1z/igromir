@@ -309,6 +309,7 @@
 
 .header-mobmenu.activewrap {
   transform: translateX(0%);
+  overflow: auto;
 }
 
 .header-wrapper {
@@ -318,6 +319,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: auto;
     h2 {
       margin-top: 30px;
       text-align: center;
@@ -377,8 +379,8 @@
   transition: 0.4s ease-in-out;
   cursor: pointer;
   border: 1px solid $main-bgcolor;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   border-radius: 50%;
     &:before {
       width: 20px;
@@ -420,8 +422,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
-    img {
-      width: 200px;
+  align-items: center;
+    object {
+      width: 220px;
+      height: 54px;
     }
 }
 
