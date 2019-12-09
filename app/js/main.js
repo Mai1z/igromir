@@ -1,6 +1,18 @@
 
 $('select').styler();
 
+$('.mobile-nav__btn').click(function(){
+  $('html').animate({scrollTop: 0}, "slow");
+});
+
+$(window).scroll(function(e) {
+  if($(window).scrollTop()>=200) {
+    $('.mobile-nav').fadeIn(200);
+  } else {
+    $('.mobile-nav').fadeOut(200);
+  }
+});
+
 $('.main-slider__inner').slick({
   dots: false,
   speed: 300,
@@ -170,6 +182,8 @@ for (j=0; j<acc2.length; j++) {
     }
   });
 }
+
+
 
 
 

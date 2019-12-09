@@ -235,6 +235,27 @@
 
 .header-inner-icons__item {
   margin-right: 5px;
+  position: relative;
+}
+
+.header-inner-like__score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.header-inner-shop__score {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header__inner-mobile {
@@ -575,6 +596,46 @@
     }
 }
 
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav__inner {
+  position: absolute;
+  height: 60px;
+  background-color: hsla(0,0%,100%,.94);
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  position: fixed;
+  display: flex !important;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.mobile-nav__btn {
+  position: relative;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+  &:after {
+    content: '\f062';
+    font-family: 'icomoon';
+    position: absolute;
+    font-size: 30px;
+    color: #4DBC08;
+    top: 10px;
+    left: 0;
+  }
+}
+
+.mobile-nav {
+  .header-inner-icons__item {
+    margin-left: 5px;
+  }
+}
+ 
 @media (max-width: 1020px) {
   .header__inner {
     display: none;
